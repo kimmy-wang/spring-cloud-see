@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.6.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
+    </parent>
+    <groupId>team.see.cloud</groupId>
+    <artifactId>spring-cloud-see-parent</artifactId>
+    <version>1.0.3-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>spring-cloud-see-parent</name>
+    <description>Spring Cloud See Project</description>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <banner.version>1.0.2</banner.version>
+        <fastjson.version>1.2.56</fastjson.version>
+        <samples-core.version>0.1.0-SNAPSHOT</samples-core.version>
+        <user-common.version>0.1.0-SNAPSHOT</user-common.version>
+        <spring-cloud.version>Finchley.SR2</spring-cloud.version>
+        <swagger-spring-boot-starter.version>1.9.0.RELEASE</swagger-spring-boot-starter.version>
+        <maven.prefix>https://repo.rdc.aliyun.com/repository</maven.prefix>
+    </properties>
+
+    <modules>
+        <module>spring-cloud-see-core</module>
+        <module>spring-cloud-see-swagger</module>
+        <module>spring-cloud-see-auth</module>
+        <module>spring-cloud-see-dependencies</module>
+        <module>spring-cloud-starter-see-swagger</module>
+        <module>spring-cloud-starter-see-auth</module>
+    </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>team.see.cloud</groupId>
+                <artifactId>spring-cloud-see-dependencies</artifactId>
+                <version>${project.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.spring4all</groupId>
+                <artifactId>swagger-spring-boot-starter</artifactId>
+                <version>${swagger-spring-boot-starter.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.upcwangying.cloud.samples</groupId>
+                <artifactId>samples-core</artifactId>
+                <version>${samples-core.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.upcwangying.cloud.samples.user</groupId>
+                <artifactId>user-common</artifactId>
+                <version>${user-common.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.alibaba</groupId>
+                <artifactId>fastjson</artifactId>
+                <version>${fastjson.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>com.nepxion</groupId>
+                <artifactId>banner</artifactId>
+                <version>${banner.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <repositories>
+        <repository>
+            <id>rdc-releases</id>
+            <name>rdc</name>
+            <url>${maven.prefix}/128832-release-UI6lnh</url>
+        </repository>
+        <repository>
+            <id>rdc-snapshots</id>
+            <name>rdc snapshots</name>
+            <url>${maven.prefix}/128832-snapshot-mFEr0v</url>
+        </repository>
+    </repositories>
+
+    <distributionManagement>
+        <repository>
+            <id>rdc-releases</id>
+            <name>rdc</name>
+            <url>${maven.prefix}/128832-release-UI6lnh</url>
+        </repository>
+        <snapshotRepository>
+            <id>rdc-snapshots</id>
+            <name>rdc snapshots</name>
+            <url>${maven.prefix}/128832-snapshot-mFEr0v</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+</project>

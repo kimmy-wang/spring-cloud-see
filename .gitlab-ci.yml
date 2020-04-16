@@ -1,0 +1,20 @@
+variables:
+  GIT_SUBMODULE_STRATEGY: recursive
+
+stages:
+  - test
+  - deploy
+
+test:
+  stage: test
+  script:
+    - 'mvn test'
+  only:
+    - tags
+
+deploy:
+  stage: deploy
+  script:
+    - 'mvn deploy -Dmaven.test.skip=true'
+  only:
+    - tags
