@@ -10,7 +10,7 @@
     </parent>
     <groupId>com.upcwangying.cloud.see</groupId>
     <artifactId>spring-cloud-see-parent</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <packaging>pom</packaging>
     <name>spring-cloud-see-parent</name>
     <description>Spring Cloud See Project</description>

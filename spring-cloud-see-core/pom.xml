@@ -5,11 +5,11 @@
     <parent>
         <groupId>com.upcwangying.cloud.see</groupId>
         <artifactId>spring-cloud-see-parent</artifactId>
-        <version>1.0.3-SNAPSHOT</version>
+        <version>1.0.3</version>
         <relativePath>..</relativePath>
     </parent>
     <artifactId>spring-cloud-see-core</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <name>spring-cloud-see-core</name>
     <description>Demo project for Spring Boot</description>
     <url>https://cloud.upcwangying.com</url>
