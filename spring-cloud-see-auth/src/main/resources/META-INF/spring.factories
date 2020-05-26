@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-team.see.cloud.auth.SeeAuthAutoConfiguration
+com.upcwangying.cloud.see.auth.SeeAuthAutoConfiguration

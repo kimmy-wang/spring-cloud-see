@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>team.see.cloud</groupId>
+        <groupId>com.upcwangying.cloud.see</groupId>
         <artifactId>spring-cloud-see-parent</artifactId>
         <version>1.0.3-SNAPSHOT</version>
         <relativePath>..</relativePath>
@@ -12,6 +12,7 @@
     <version>1.0.3-SNAPSHOT</version>
     <name>spring-cloud-see-core</name>
     <description>Demo project for Spring Boot</description>
+    <url>https://cloud.upcwangying.com</url>
 
     <dependencies>
         <dependency>

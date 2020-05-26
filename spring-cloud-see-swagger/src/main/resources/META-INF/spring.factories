@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-team.see.cloud.swagger.SeeSwaggerAutoConfiguration
+com.upcwangying.cloud.see.swagger.SeeSwaggerAutoConfiguration

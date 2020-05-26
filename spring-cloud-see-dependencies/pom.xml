@@ -3,12 +3,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>team.see.cloud</groupId>
+    <groupId>com.upcwangying.cloud.see</groupId>
     <artifactId>spring-cloud-see-dependencies</artifactId>
     <version>1.0.3-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>spring-cloud-see-dependencies</name>
     <description>Demo project for Spring Boot</description>
+    <url>https://cloud.upcwangying.com</url>
 
     <properties>
         <java.version>1.8</java.version>
@@ -20,31 +21,31 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>team.see.cloud</groupId>
+                <groupId>com.upcwangying.cloud.see</groupId>
                 <artifactId>spring-cloud-see-core</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>team.see.cloud</groupId>
+                <groupId>com.upcwangying.cloud.see</groupId>
                 <artifactId>spring-cloud-see-swagger</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>team.see.cloud</groupId>
+                <groupId>com.upcwangying.cloud.see</groupId>
                 <artifactId>spring-cloud-see-auth</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>team.see.cloud</groupId>
+                <groupId>com.upcwangying.cloud.see</groupId>
                 <artifactId>spring-cloud-starter-see-auth</artifactId>
                 <version>${project.version}</version>
             </dependency>
 
             <dependency>
-                <groupId>team.see.cloud</groupId>
+                <groupId>com.upcwangying.cloud.see</groupId>
                 <artifactId>spring-cloud-starter-see-swagger</artifactId>
                 <version>${project.version}</version>
             </dependency>
@@ -121,30 +122,36 @@
         </plugins>
     </build>
 
-    <repositories>
-        <repository>
-            <id>rdc-releases</id>
-            <name>rdc</name>
-            <url>${maven.prefix}/128832-release-UI6lnh</url>
-        </repository>
-        <repository>
-            <id>rdc-snapshots</id>
-            <name>rdc snapshots</name>
-            <url>${maven.prefix}/128832-snapshot-mFEr0v</url>
-        </repository>
-    </repositories>
+    <developers>
+        <developer>
+            <name>Ying Wang</name>
+            <email>upcwangying@gmail.com</email>
+            <url>https://github.com/upcwangying</url>
+            <timezone>+8</timezone>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>MIT License</name>
+            <url>https://raw.githubusercontent.com/see/spring-cloud-see/master/LICENSE.md</url>
+        </license>
+    </licenses>
+
+    <scm>
+        <url>https://github.com/see/spring-cloud-see</url>
+        <connection>https://github.com/see/spring-cloud-see.git</connection>
+    </scm>
 
     <distributionManagement>
-        <repository>
-            <id>rdc-releases</id>
-            <name>rdc</name>
-            <url>${maven.prefix}/128832-release-UI6lnh</url>
-        </repository>
         <snapshotRepository>
-            <id>rdc-snapshots</id>
-            <name>rdc snapshots</name>
-            <url>${maven.prefix}/128832-snapshot-mFEr0v</url>
+            <id>oss</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
         </snapshotRepository>
+        <repository>
+            <id>oss</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
     </distributionManagement>
 
 </project>
