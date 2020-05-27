@@ -49,7 +49,6 @@ import static com.upcwangying.cloud.see.swagger.config.properties.SeeSwaggerProp
  * 自动装配类
  *
  * @author WANGY
- * @date 2019/5/5 10:07
  */
 @Configuration
 @EnableConfigurationProperties(SeeSwaggerProperties.class)

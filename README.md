@@ -48,3 +48,9 @@ see:
     prefix: ${zuul.prefix}  # 与`zuul.prefix`配置一致, ${zuul.prefix}
     url: /v2/api-docs       # url, 默认"/v2/api-docs", 可忽略
 ```
+
+## Deploy
+
+```
+mvn clean install deploy -P release -Dgpg.passphrase=生成秘钥时候你的密码
+```

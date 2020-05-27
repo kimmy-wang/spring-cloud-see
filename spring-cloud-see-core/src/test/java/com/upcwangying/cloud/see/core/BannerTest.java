@@ -35,7 +35,6 @@ import com.taobao.text.Color;
  * Created by WANGY
  *
  * @author WANGY
- * @date 2019/5/14 16:53
  */
 public class BannerTest {
     public static void main(String[] args) {

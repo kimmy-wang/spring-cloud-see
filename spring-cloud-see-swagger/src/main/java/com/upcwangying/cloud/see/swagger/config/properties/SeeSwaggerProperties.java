@@ -37,7 +37,6 @@ import java.util.List;
  * yaml 配置类
  *
  * @author WANGY
- * @date 2019/5/5 10:10
  */
 @Data
 @ConfigurationProperties(SeeSwaggerProperties.PREFIX)

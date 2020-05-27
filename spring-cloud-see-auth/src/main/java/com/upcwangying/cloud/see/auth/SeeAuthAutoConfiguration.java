@@ -48,7 +48,6 @@ import org.springframework.web.util.UrlPathHelper;
  * Created by WANGY
  *
  * @author WANGY
- * @date 2019/5/6 13:35
  */
 @Configuration
 @EnableConfigurationProperties(SeeAuthProperties.class)

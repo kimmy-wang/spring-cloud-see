@@ -30,7 +30,6 @@ package com.upcwangying.cloud.see.auth.enums;
  * request method enum
  *
  * @author WANGY
- * @date 2019/5/6 15:31
  */
 public enum HttpMethod {
     GET,

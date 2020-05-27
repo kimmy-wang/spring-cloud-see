@@ -59,7 +59,6 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
  * Authorization
  *
  * @author WANGY
- * @date 2019/3/27 13:31
  */
 @Slf4j
 @RequiredArgsConstructor

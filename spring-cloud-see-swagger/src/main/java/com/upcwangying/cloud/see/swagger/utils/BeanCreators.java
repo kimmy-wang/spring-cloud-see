@@ -32,7 +32,6 @@ import springfox.documentation.swagger.web.SwaggerResource;
  * Bean生成类
  *
  * @author WANGY
- * @date 2019/5/6 13:22
  */
 public final class BeanCreators {
 

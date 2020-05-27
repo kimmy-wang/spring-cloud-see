@@ -32,7 +32,6 @@ import com.upcwangying.cloud.samples.core.vo.ResultVO;
  * Created by WANGY
  *
  * @author WANGY
- * @date 2019/5/10 17:01
  */
 public interface UserPermissionService {
 

@@ -32,33 +32,31 @@ import com.nepxion.banner.DescriptionBanner;
 import com.nepxion.banner.LogoBanner;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 /**
  * Created by WANGY
  *
  * @author WANGY
- * @date 2019/5/14 13:59
  */
 public class SeeBanner {
     public static void show(LogoBanner logoBanner, Description... descriptionList) {
         String bannerShown = System.getProperty(BannerConstant.BANNER_SHOWN, "true");
-        if (!Boolean.valueOf(bannerShown)) {
+        if (!Boolean.parseBoolean(bannerShown)) {
             return;
         }
 
         System.out.println("");
         String bannerShownAnsiMode = System.getProperty(BannerConstant.BANNER_SHOWN_ANSI_MODE, "false");
-        if (Boolean.valueOf(bannerShownAnsiMode)) {
+        if (Boolean.parseBoolean(bannerShownAnsiMode)) {
             System.out.println(logoBanner.getBanner());
         } else {
             System.out.println(logoBanner.getPlainBanner());
         }
 
         List<Description> descriptions = new ArrayList<Description>();
-        for (Description description : descriptionList) {
-            descriptions.add(description);
-        }
+        Collections.addAll(descriptions, descriptionList);
 
         DescriptionBanner descriptionBanner = new DescriptionBanner();
         System.out.println(descriptionBanner.getBanner(descriptions));

@@ -58,7 +58,6 @@ import static org.springframework.http.MediaType.APPLICATION_JSON_UTF8_VALUE;
  * Authentication
  *
  * @author WANGY
- * @date 2019/3/27 13:31
  */
 @Slf4j
 @RequiredArgsConstructor

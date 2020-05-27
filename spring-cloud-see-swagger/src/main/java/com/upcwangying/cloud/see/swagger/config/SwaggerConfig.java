@@ -43,7 +43,6 @@ import static com.upcwangying.cloud.see.swagger.utils.BeanCreators.createSwagger
  * Swagger ui配置类
  *
  * @author WANGY
- * @date 2019/3/29 14:15
  */
 @RequiredArgsConstructor
 public class SwaggerConfig implements SwaggerResourcesProvider {

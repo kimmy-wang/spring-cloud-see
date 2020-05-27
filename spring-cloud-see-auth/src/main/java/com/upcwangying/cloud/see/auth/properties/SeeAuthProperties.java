@@ -40,7 +40,6 @@ import static org.springframework.cloud.netflix.zuul.filters.support.FilterConst
  * Created by WANGY
  *
  * @author WANGY
- * @date 2019/5/6 13:37
  */
 @Data
 @ConfigurationProperties(SeeAuthProperties.PREFIX)
