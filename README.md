@@ -1,5 +1,7 @@
 # Spring Cloud See
 
+![Maven Central](https://img.shields.io/maven-central/v/com.upcwangying.cloud.see/spring-cloud-see-parent)
+
 `Spring Cloud See`包含两个模块: 
 
 - `See Auth`: 认证鉴权模块
