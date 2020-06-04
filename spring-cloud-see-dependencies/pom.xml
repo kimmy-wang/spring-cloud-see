@@ -5,7 +5,7 @@
 
     <groupId>com.upcwangying.cloud.see</groupId>
     <artifactId>spring-cloud-see-dependencies</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4</version>
     <packaging>pom</packaging>
     <name>spring-cloud-see-dependencies</name>
     <description>Demo project for Spring Boot</description>
